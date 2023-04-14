@@ -1,16 +1,16 @@
 //Write a function that takes an array of numbers as input and returns the sum of all even numbers in the array.
 function sumofEvenNumbers(numbers) {
-  let evenSum = 0;
+  let evenSum = 0
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 === 0) {
-      evenSum += numbers[i];
+      evenSum += numbers[i]
     }
   }
-  return evenSum;
+  return evenSum
 }
 const numbers = [1,2,3,4,5,6,7,8,9]
-const evenSum = sumofEvenNumbers(numbers);
-console.log(evenSum);
+const evenSum = sumofEvenNumbers(numbers)
+console.log(evenSum)
 
 
 
@@ -53,3 +53,23 @@ function cal_avg(Number){
 let myarray=[1,2,3,4,5,6,7,8,9]
 let myavg=cal_avg(myarray)
 console.log(myavg)
+
+
+
+// Write a function that takes a string as input and returns the number of vowels in the string.
+function countVowels(str) {
+    let vowels = "AEIOUaeiou"
+    let count = 0
+    for (let i = 0; i < str.length; i++) {
+        for (let k = 0; k < vowels.length; k++) {
+            if (str[i] == vowels[k]) {
+                count++
+            }
+        }
+    }
+    return count;
+}
+let mystring = "Ayan Mirza"
+let myvowels = countVowels(mystring)
+console.log(mystring)
+console.log(`Number of vowels in "${mystring}" = ` + myvowels)
